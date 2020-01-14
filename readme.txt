@@ -112,6 +112,8 @@ $ git stash clear --> 删除所有缓存的stash
 -----------------------------------------------------------------------------
 $ git commit --amend --> 覆盖自己本地仓库的最新的一次提交
 $ git rebase -i 9ce58bdd9c5ee9bdedf8c57890ba5dadfb390363 --> 合并 9ce58bdd9c5ee9bdedf8c57890ba5dadfb390363 这个commit之前的所用提交
+  会弹出一个窗口 执行下面的操作 --> 将最后一行的 pick 改为 s。 s 为 squash 的缩写 squash 的意思是 将标s的前一个提交 压缩为标s的提交。
+  然后保存，之后会弹出一个编辑器。  编辑器修改的内容是commit提交上去的说明信息。
 $ git rebase -i HEAD~2 --> 压缩合并最近两次提交
 
 
