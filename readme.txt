@@ -58,7 +58,7 @@ $ git checkout dev		--> 跳转到dev的分支
 $ git branch			--> 查看当前分支的情况，标 * 的为当前分支
 $ git checkout master	--> 切换到master分支
 $ git merge dev			--> 把dev分支的工作结果合并到当前 master分支上（Fast forward模式）
-$ git checkout -d dev	--> 合并完成后就可以放心删除dev分支了（强行删除 -D）
+$ git branch -d dev	--> 合并完成后就可以放心删除dev分支了（强行删除 -D）
 
 当出现分支合并冲突时，需要手动处理出现的冲突问题
 
@@ -77,8 +77,8 @@ $ git stash pop		--> 恢复并删除
 $ git remote	--> 查看远程仓库的信息
 $ git remote -v	--> 显示更详细的远程仓库的信息
 
-$ git push orgin master --> 推送master分支上的内容
-$ git push orgin dev --> 推送dev分支上的内容
+$ git push origin master --> 推送master分支上的内容
+$ git push origin dev --> 推送dev分支上的内容
 
 多人协作的工作模式通常是这样：
 1.首先，可以试图用git push origin <branch-name>推送自己的修改；
